@@ -1,0 +1,31 @@
+<div class="container">
+    <h3>Add New Employee</h3>
+    <!-- property binding : binds Angular property to the form -->
+    <!-- can also use (ngSubmit) here instead of click on button tag-->
+    <form [formGroup] = "addForm">
+        <div class="form-group">
+          <label for="id">Id :</label>
+          <input type="text" id="id" class="form-control" formControlName="id"><br>
+        </div>
+        <div class="form-group">
+          <label for="name">Name :</label>
+          <input type="text" id="name" class="form-control" formControlName="name"><br><br>
+        </div>
+        <div class="form-group">
+            <label for="salary">Salary :</label>
+            <input type="text" id="salary" class="form-control" formControlName="salary"><br><br>
+          </div>
+        <div class="d-flex justify-content-center">
+
+          <!-- event binding in angular (click) is calling onClick -->
+          <!-- can also use (ngSubmit) on form tag -->
+          <button 
+          (click) = "saveEmployee()" 
+          class="btn-warning btn btn-sm me-3">Submit</button>
+          <button class="btn-success btn btn-sm ms-3">Clear</button>
+        </div>
+        <br/>
+        
+      </form>
+</div>
+

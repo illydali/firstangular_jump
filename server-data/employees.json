@@ -1,0 +1,29 @@
+{
+  "employees": [
+    {
+      "id": 1,
+      "name": "Anemone Lim",
+      "salary": 300
+    },
+    {
+      "id": 2,
+      "name": "Ben Still",
+      "salary": 400
+    },
+    {
+      "id": 3,
+      "name": "Jon Snow",
+      "salary": 500
+    },
+    {
+      "id": "4",
+      "name": "Benjamin Here",
+      "salary": "50000"
+    },
+    {
+      "id": "5",
+      "name": "Tom Hardy",
+      "salary": "5000"
+    }
+  ]
+}
