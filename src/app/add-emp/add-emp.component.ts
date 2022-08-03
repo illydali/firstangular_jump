@@ -11,7 +11,7 @@ import { EmployeeService } from '../service/employee.service';
 export class AddEmpComponent implements OnInit {
 
   addForm?: FormGroup;
-
+  
   constructor(
     private formBuilder: FormBuilder,
     private employeeService: EmployeeService) { }

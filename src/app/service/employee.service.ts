@@ -20,4 +20,9 @@ export class EmployeeService {
     // post method
     return this.httpClient.post(this.baseUrl, employee);
   }
+
+  deleteEmployee(id: number) {
+    // delete method
+    return this.httpClient.delete<Employee>(this.baseUrl + "/" + id);
+  }
 }

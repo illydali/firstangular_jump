@@ -16,14 +16,19 @@
       "salary": 500
     },
     {
-      "id": "4",
-      "name": "Benjamin Here",
-      "salary": "50000"
-    },
-    {
       "id": "5",
       "name": "Tom Hardy",
       "salary": "5000"
+    },
+    {
+      "id": "4",
+      "name": "Benjamin",
+      "salary": "50000"
+    },
+    {
+      "id": "6",
+      "name": "Kenny Lee",
+      "salary": "6900"
     }
   ]
 }

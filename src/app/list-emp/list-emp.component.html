@@ -8,7 +8,8 @@
                         <th scope="col">#</th>
                         <th scope="col">Name</th>
                         <th scope="col">Salary</th>
-                    </tr>
+                        <th scope="col"></th>
+                    </tr>  
                 </thead>
                 <tbody>
                     <!-- structural directive -->
@@ -16,6 +17,9 @@
                         <td>{{employee.id}}</td>
                         <td>{{employee.name}} </td>
                         <td>${{employee.salary}} </td>
+                        <td>
+                            <button class="btn btn-info btn-sm" (click)="deleteEmployee(employee)">Del</button>
+                        </td>
                     </tr>
                 </tbody>
             </table>

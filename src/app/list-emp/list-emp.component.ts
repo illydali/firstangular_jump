@@ -29,4 +29,12 @@ export class ListEmpComponent implements OnInit {
     )
   }
 
+  deleteEmployee(employeeToDelete: Employee) : void {
+    this.employeeService.deleteEmployee(employeeToDelete.id).subscribe(
+      (data)=> {
+      // remove from employee array
+      this.employees = this.employees.filter((e) => e != employeeToDelete) 
+    })
+  }
+
 }
