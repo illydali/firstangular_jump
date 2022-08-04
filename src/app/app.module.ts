@@ -10,6 +10,7 @@ import { AddEmpComponent } from './add-emp/add-emp.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { UpdateEmpComponent } from './update-emp/update-emp.component';
 
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -20,10 +21,10 @@ import { UpdateEmpComponent } from './update-emp/update-emp.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule,
     HttpClientModule,
     FormsModule,
     ReactiveFormsModule,
+    AppRoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]

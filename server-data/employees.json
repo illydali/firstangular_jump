@@ -3,12 +3,12 @@
     {
       "id": 1,
       "name": "Anemone Lim",
-      "salary": 300
+      "salary": "3000"
     },
     {
       "id": 2,
       "name": "Ben Still",
-      "salary": 400
+      "salary": "4500"
     },
     {
       "id": 3,
@@ -18,7 +18,7 @@
     {
       "id": "6",
       "name": "Kenny Lee",
-      "salary": "6900"
+      "salary": "690"
     }
   ]
 }

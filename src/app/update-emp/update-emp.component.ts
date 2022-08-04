@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { ActivatedRoute, Router } from '@angular/router';
 import { Employee } from '../model/employee.model';
 import { EmployeeService } from '../service/employee.service';
 
@@ -11,10 +12,13 @@ export class UpdateEmpComponent implements OnInit {
 
   id:number;
   employee: Employee;
-  constructor(private employeeService: EmployeeService) { }
+  constructor(private employeeService: EmployeeService,
+    private route: ActivatedRoute,
+    private router: Router) { }
 
   ngOnInit(): void {
-    this.id = 1;
+    // this.id = 1;
+    this.id = this.route.snapshot.params['id'];
     this.employee = new Employee();
     this.employeeService.getEmployeeById(this.id)
     .subscribe(searchEmpById => {
@@ -31,6 +35,7 @@ export class UpdateEmpComponent implements OnInit {
     this.employeeService.updateEmployee(this.id, this.employee)
     .subscribe(data => console.log(data), error => console.log(error));
     this.employee = new Employee();
+    this.router.navigate(["/employees"])
   }
 
 }

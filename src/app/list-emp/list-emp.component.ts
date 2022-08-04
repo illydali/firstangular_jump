@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { EmployeeService } from '../service/employee.service';
 import { Employee } from '../model/employee.model';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-list-emp',
@@ -10,11 +11,14 @@ import { Employee } from '../model/employee.model';
 
 /* important to remember the syntx */
 export class ListEmpComponent implements OnInit {
-  employees? : Employee[];
+  employees?: Employee[];
 
   // instantiates the employee service instance
   // -> shortcut method
-  constructor(private employeeService: EmployeeService) { }
+  constructor(
+    private employeeService: EmployeeService,
+    private router: Router) { 
+      this.employeeService = employeeService }
 
   // -> long method 
   /* constructor(private employee: EmployeeService) {
@@ -25,16 +29,21 @@ export class ListEmpComponent implements OnInit {
   ngOnInit(): void {
     // initialize
     this.employeeService.getEmployees().subscribe(
-      (employeeData) => {this.employees = employeeData}
+      (employeeData) => { this.employees = employeeData }
     )
   }
 
-  deleteEmployee(employeeToDelete: Employee) : void {
+  deleteEmployee(employeeToDelete: Employee): void {
     this.employeeService.deleteEmployee(employeeToDelete.id).subscribe(
-      (data)=> {
-      // remove from employee array
-      this.employees = this.employees.filter((e) => e != employeeToDelete) 
-    })
+      (data) => {
+        // remove from employee array
+        this.employees = this.employees.filter((e) => e != employeeToDelete)
+      })
+  }
+
+  updateEmployee(id: number) {
+    //navigate to update emp component
+    this.router.navigate(['update', id]);
   }
 
 }
