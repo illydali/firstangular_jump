@@ -1,7 +1,7 @@
 <div class="container">
-    <h4>Employee Details</h4>
+    <h3>Employee Details</h3>
     <div>
-        <div class="table-striped" style="width:500px">
+        <div class="table" style="width:500px">
             <table class="table">
                 <thead>
                     <tr>
@@ -17,7 +17,7 @@
                     <tr *ngFor="let employee of employees">
                         <td>{{employee.id}}</td>
                         <td>{{employee.name}} </td>
-                        <td>${{employee.salary}} </td>
+                        <td>{{employee.salary | currency: 'EUR'}} </td>
                         <td>
                             <button class="btn btn-outline-danger btn-sm" (click)="deleteEmployee(employee)">Delete</button>
                         </td>
