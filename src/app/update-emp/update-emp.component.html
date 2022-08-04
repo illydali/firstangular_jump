@@ -1,0 +1,35 @@
+<p>update-emp works!</p>
+<!-- TEMPLATE DRIVEN FORM: only need to import FormsModule from @angular/forms -->
+<!-- setting up the html template first, then it will send to ts?  -->
+
+<div class="container">
+    <h3>Update Employee</h3>
+   
+    <form (ngSubmit) = "updateEmployee()" >
+        <div class="form-group">
+          <label for="id">Id :</label>
+          <input type="text" id="id" name="id" class="form-control" [(ngModel)]="employee.id"><br>
+        </div>
+        <div class="form-group">
+          <label for="name">Name :</label>
+          <input type="text" id="name" name="name" class="form-control" [(ngModel)]="employee.name"><br><br>
+        </div>
+        <div class="form-group">
+            <label for="salary">Salary :</label>
+            <input type="text" id="salary" name="salary" class="form-control" [(ngModel)]="employee.salary"><br><br>
+          </div>
+        <div class="d-flex justify-content-center">
+
+          <!-- event binding in angular (click) is calling onClick -->
+          <!-- can also use (ngSubmit) on form tag -->
+          <button 
+          
+          class="btn-danger btn btn-sm me-3">Update</button>
+          <button type="reset" class="btn-success btn btn-sm ms-3">Clear</button>
+        </div>
+        <br/>
+        
+      </form>
+</div>
+
+

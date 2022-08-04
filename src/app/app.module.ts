@@ -8,13 +8,15 @@ import { LoginComponent } from './login/login.component';
 import { ListEmpComponent } from './list-emp/list-emp.component';
 import { AddEmpComponent } from './add-emp/add-emp.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { UpdateEmpComponent } from './update-emp/update-emp.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     LoginComponent,
     ListEmpComponent,
-    AddEmpComponent
+    AddEmpComponent,
+    UpdateEmpComponent
   ],
   imports: [
     BrowserModule,
