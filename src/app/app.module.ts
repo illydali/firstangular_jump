@@ -9,6 +9,7 @@ import { ListEmpComponent } from './list-emp/list-emp.component';
 import { AddEmpComponent } from './add-emp/add-emp.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { UpdateEmpComponent } from './update-emp/update-emp.component';
+import { ListEmpLinkBootComponent } from './list-emp-link-boot/list-emp-link-boot.component';
 
 
 @NgModule({
@@ -17,7 +18,8 @@ import { UpdateEmpComponent } from './update-emp/update-emp.component';
     LoginComponent,
     ListEmpComponent,
     AddEmpComponent,
-    UpdateEmpComponent
+    UpdateEmpComponent,
+    ListEmpLinkBootComponent
   ],
   imports: [
     BrowserModule,

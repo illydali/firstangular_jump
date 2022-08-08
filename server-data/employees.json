@@ -19,6 +19,11 @@
       "id": "6",
       "name": "Kenny Lee",
       "salary": "690"
+    },
+    {
+      "id": "666",
+      "name": "Lucy",
+      "salary": "9900"
     }
   ]
 }
