@@ -34,7 +34,7 @@ export class ListEmpLinkBootComponent implements OnInit {
   }
   updateEmployee(id :number) {
     //navigate to update emp comp
-    this.router.navigate(['update',id]);
+    this.router.navigate(['employees-update-boot',id]);
   }
 
 }

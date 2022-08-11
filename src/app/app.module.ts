@@ -10,6 +10,8 @@ import { AddEmpComponent } from './add-emp/add-emp.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { UpdateEmpComponent } from './update-emp/update-emp.component';
 import { ListEmpLinkBootComponent } from './list-emp-link-boot/list-emp-link-boot.component';
+import { AddEmpLinkBootComponent } from './add-emp-link-boot/add-emp-link-boot.component';
+import { UpdateEmpLinkBootComponent } from './update-emp-link-boot/update-emp-link-boot.component';
 
 
 @NgModule({
@@ -19,7 +21,9 @@ import { ListEmpLinkBootComponent } from './list-emp-link-boot/list-emp-link-boo
     ListEmpComponent,
     AddEmpComponent,
     UpdateEmpComponent,
-    ListEmpLinkBootComponent
+    ListEmpLinkBootComponent,
+    AddEmpLinkBootComponent,
+    UpdateEmpLinkBootComponent
   ],
   imports: [
     BrowserModule,

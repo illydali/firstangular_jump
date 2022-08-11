@@ -7,7 +7,7 @@ import { Employee } from '../model/employee.model';
   providedIn: 'root'
 })
 export class EmployeeBootService {
-  baseUrl : string = "http://localhost:8080/api/employees";
+  baseUrl : string = "http://localhost:8080/api/v1/employees";
 
   constructor(private httpClient: HttpClient) {
   }
