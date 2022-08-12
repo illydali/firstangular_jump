@@ -4,8 +4,10 @@
     <!-- can also use (ngSubmit) here instead of click on button tag-->
     <form [formGroup] = "addForm">
         <div class="form-group">
-          <label for="id">Id :</label>
-          <input type="text" id="id" class="form-control" formControlName="id"><br>
+
+          <!-- set as hidden to allow auto generated id  -->
+          <label hidden for="id">Id :</label>
+          <input type="text" hidden id="id" class="form-control" formControlName="id"><br>
         </div>
         <div class="form-group">
           <label for="name">Name :</label>
